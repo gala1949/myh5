@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--设置网页图标-->
+	<link rel="shortcut icon" href="img/ilogo.ico" />
+    <title>购物车</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/carts.css">
+    <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+	 <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <div class="container">
+                <img src="img/logo4.png" onclick="window.location.href='index.html'">
+                <button
+                    class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <!--margin start = margin left-->
+                        <li class="nav-item">
+                            <div class="nav-link">首页</div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link" onclick="window.location.href = 'register.html'">登录</div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link" onclick="window.location.href = 'show.html'">购物车</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+	<div class="container">
+    <section class="cartMain">
+        <div class="cartMain_hd">
+            <ul class="order_lists cartTop">
+				<div class="col-lg-1 col-md-1 col-sm-1">
+					<li class="list_chk">
+					    <!--所有商品全选-->
+					    <input type="checkbox" id="all" class="whole_check">
+					    <label for="all"></label>
+					    全选
+					</li>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-sm-pull-1 hidden-xs">
+					<li class="list_con"><b>商品信息</b></li>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+					<li class="list_info"><b>商品参数</b></li>
+				</div>
+				<div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+					<li class="list_price"><b>单价</b></li>
+				</div>
+				
+				<div class="col-lg-1 col-md-1 col-sm-2 hidden-xs">
+					<li class="list_amount"><b>数量</b></li>
+				</div>
+				<div class="col-lg-1 col-md-1 col-sm-1 hidden-sm hidden-xs">
+					<li class="list_sum"><b>金额</b></li>
+				</div>
+				<div class="col-lg-2 col-md-2 col-sm-1 hidden-xs">
+					<li class="list_op"><b>操作</b></li>
+				</div> 
+            </ul>
+        </div>
+        <!--第一件商品-->
+        <div class="cartBox">
+            <div class="order_content">
+				<ul class="order_lists">
+				    <div class="row" style="padding-bottom: 15px;">
+						<!--复选框-->
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="padding-left: 5px;">
+							<li class="list_chk">
+							    <input type="checkbox" id="checkbox_2" class="son_check">
+							    <label for="checkbox_2"></label>
+							</li>
+						</div>
+						<!--商品信息/图片-->
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+							<li class="list_con">
+							    <div class="list_img"><a href="javascript:;"><img src="img/cart3.jpg" alt=""></a></div>
+							</li>
+						</div>
+						<!--手机版购物车-->
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6" style="padding-left: 0;">
+							<div class="container-fluid visible-xs">
+								<!--信息--><!--第一行-->
+								<div class="row">
+									<div class="col-xs-12" style="padding-right: 0;">
+										<li class="list_con">
+											<div class="list_text"><a href="javascript:;"></a></div>
+										</li>
+									</div>
+								</div>
+								<!--参数--><!--第二行-->
+								<div class="row">
+									<li class="list_info">
+									    <p style="margin-left: 0px;">规格：默认</p>
+									    
+									</li>
+								</div>
+					            <!--单价和数量--><!--第三行-->
+								<div class="row">
+									<!--单价-->
+									<div class="col-xs-9" style="margin-left: -15px;margin-top: -15px;">
+										<li class="list_price">
+										    <p class="price" style="font-size: larger;color: red; font-family: microsoft yahei;">￥688</p>
+										</li>
+									</div>
+									<!--数量-->
+
+								</div>
+							</div>
+                             <!--电脑版商品信息,xs时隐藏-->   
+							<li class="list_con hidden-xs">
+								<div class="list_text" style="padding-left: 15px;"><a href="javascript:;" onclick="window.location.href = 'cart.html'">
+									透过网络将庞大的计算处理程序自动分拆成无数个较小的子程序，
+									再交由多部服务器所组成的庞大系统经搜寻、计算分析之后将处理结果回传给用户。</a></div>
+							</li>
+						</div>
+						<!--商品参数-->
+						<div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+							<li class="list_info" style="padding-top: 20px;">
+							    <p>规格：默认</p>
+							</li>
+						</div>
+						<!--单价-->
+						<div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+							<li class="list_price">
+							    <p class="price" style="font-size: larger;color: red; font-family: microsoft yahei;">￥688</p>
+							</li>
+						</div>
+						<!--数量-->
+						<div class="col-lg-1 col-md-1 col-sm-2 col-xs-9">
+							<li class="list_amount">
+							    <div class="amount_box">
+							        <a href="javascript:;" class="reduce reSty" style="text-decoration: none;">-</a>
+							        <input type="text" value="1" class="sum" style="height: 23px;width: 41px;">
+							        <a href="javascript:;" class="plus" style="text-decoration: none;">+</a>
+							    </div>
+							</li>
+						</div>
+						<!--金额-->
+						<div class="col-lg-1 col-md-1 col-sm-1 hidden-sm hidden-xs">
+							<li class="list_sum">
+							    <p class="sum_price" style="font-size: larger; font-family: microsoft yahei;">￥999</p>
+							</li>
+						</div>
+						<!--操作-->
+						<div class="col-lg-2 col-md-2 col-sm-1 col-xs-3">
+							<li class="list_op">
+							    <p class="del"><button type="button" class="btn btn-danger delBtn" style="font-family: helvetica;">删除</button></p>
+							</li>
+						</div>
+					</div>
+                </ul>
+				
+				
+            </div>
+        </div>
+		
+		<!--第二件商品-->
+		<div class="cartBox">
+		    <div class="order_content">
+				<ul class="order_lists">
+				    <div class="row" style="padding-bottom: 15px;">
+						<!--复选框-->
+						<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1" style="padding-left: 5px;">
+							<li class="list_chk">
+							    <input type="checkbox" id="checkbox_3" class="son_check">
+							    <label for="checkbox_3"></label>
+							</li>
+						</div>
+						<!--商品信息/图片-->
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-4">
+							<li class="list_con">
+							    <div class="list_img"><a href="javascript:;"><img src="img/cart6.jpg" alt=""></a></div>
+							</li>
+						</div>
+						<!--手机版购物车-->
+						<div class="col-lg-2 col-md-2 col-sm-2 col-xs-6" style="padding-left: 0;">
+							<div class="container-fluid visible-xs">
+								<!--信息--><!--第一行-->
+								<div class="row">
+									<div class="col-xs-12" style="padding-right: 0;">
+										<li class="list_con">
+											<div class="list_text"><a href="javascript:;" onclick="window.location.href = 'cart.html'">
+												借助计算机等设备产生一个逼真的三维视觉、触觉、嗅觉等多种感官体验的虚拟世界，
+												从而使处于虚拟世界中的人产生一种身临其境的感觉 。</a></div>
+										</li>
+									</div>
+								</div>
+								<!--参数--><!--第二行-->
+								<div class="row">
+									<li class="list_info">
+									    <p style="margin-left: 0px;">规格：默认</p>
+									</li>
+								</div>
+					            <!--单价和数量--><!--第三行-->
+								<div class="row">
+									<!--单价-->
+									<div class="col-xs-9" style="margin-left: -15px;margin-top: -15px;">
+										<li class="list_price">
+										    <p class="price" style="font-size: larger;color: red; font-family: microsoft yahei;">￥999</p>
+										</li>
+									</div>
+									<!--数量-->
+		
+								</div>
+							</div>
+		                     <!--电脑版商品信息,xs时隐藏-->   
+							<li class="list_con hidden-xs">
+								<div class="list_text" style="padding-left: 15px;"><a href="javascript:;" onclick="window.location.href = 'cart.html'">
+									借助计算机等设备产生一个逼真的三维视觉、触觉、嗅觉等多种感官体验的虚拟世界，
+									而使处于虚拟世界中的人产生一种身临其境的感觉。
+								</a></div>
+							</li>
+						</div>
+						<!--商品参数-->
+						<div class="col-lg-2 col-md-2 col-sm-2 hidden-xs">
+							<li class="list_info" style="padding-top: 20px;">
+							    <p>规格：默认</p>
+							</li>
+						</div>
+						<!--单价-->
+						<div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+							<li class="list_price">
+							    <p class="price" style="font-size: larger;color: red; font-family: microsoft yahei;">￥999</p>
+							</li>
+						</div>
+						<!--数量-->
+						<div class="col-lg-1 col-md-1 col-sm-2 col-xs-9">
+							<li class="list_amount">
+							    <div class="amount_box">
+							        <a href="javascript:;" class="reduce reSty" style="text-decoration: none;">-</a>
+							        <input type="text" value="1" class="sum" style="height: 23px;width: 41px;">
+							        <a href="javascript:;" class="plus" style="text-decoration: none;">+</a>
+							    </div>
+							</li>
+						</div>
+						<!--金额-->
+						<div class="col-lg-1 col-md-1 col-sm-1 hidden-sm hidden-xs">
+							<li class="list_sum">
+							    <p class="sum_price" style="font-size: larger; font-family: microsoft yahei;">￥999</p>
+							</li>
+						</div>
+						<!--操作-->
+						<div class="col-lg-2 col-md-2 col-sm-1 col-xs-3">
+							<li class="list_op">
+							    <p class="del">
+									<button type="button" class="btn btn-danger delBtn" style="font-family: helvetica;">
+								         删除
+								    </button>
+								</p>
+							</li>
+						</div>
+					</div>
+		        </ul>
+		    </div>
+		</div>	
+    </section>
+
+        <!--底部-->
+        <div class="row" style="background: #e5e5e5;margin: 0 0;">
+                <div class="bar-right">
+                    <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+                    <div class="totalMoney">共计:<strong class="total_text">0.00</strong></div>
+                    <div class="calBtn"><a href="javascript:;">结算</a></div>
+                </div>
+        </div>
+    
+	
+	<!--删除提示框-->
+		<section class="my_model" style="height: 15%;">
+		    <p class="title">删除宝贝<span class="closeModel">X</span></p>
+		    <p>您确认要删除该宝贝吗？</p>
+			<div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>	
+		</section>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/carts.js"></script>
+	
+</body>
+</html>

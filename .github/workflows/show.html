@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="img/ilogo.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="./css/style1.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <title>i学习</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+    <div class="container">
+      <img src="img/logo4.png" onclick="window.location.href = 'index.html'">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <!--margin start = margin left-->
+          <li class="nav-item">
+            <div class="nav-link" onclick="window.location.href = 'index.html'">首页</div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link" onclick="window.location.href = 'register.html'">登录</div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="wrapper" style="flex-wrap:wrap;">
+    <div style="width:70%;"></div>
+    <div class="cart-nav" style="position:relative;width:20%;">
+      <div class="icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span onclick="window.location.href = 'cart.html'">购物车</span>
+      </div>
+      <div class="item-count">0</div>
+    </div>
+    <div class="card">
+      <img src="./img/cart1.jpg" alt="">
+      <div class="content">
+        <div class="row">
+          <div class="details">
+            <span>人工智能</span>
+            <p>Artificial intelligence</p>
+          </div>
+          <div class="price">$998</div>
+        </div>
+        <div class="buttons">
+          <button>立即购买</button>
+          <button class="cart-btn">加入购物车</button>
+        </div>
+      </div>
+
+    </div>
+    <div class="card">
+      <img src="./img/cart2.jpg" alt="">
+      <div class="content">
+        <div class="row">
+          <div class="details">
+            <span>深度学习</span>
+            <p>Deep learning</p>
+          </div>
+          <div class="price">$1288</div>
+        </div>
+        <div class="buttons">
+          <button>立即购买</button>
+          <button class="cart-btn">加入购物车</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/cart3.jpg" alt="">
+      <div class="content">
+        <div class="row">
+          <div class="details">
+            <span>云计算</span>
+            <p>Cloud computing</p>
+          </div>
+          <div class="price">$688</div>
+        </div>
+        <div class="buttons">
+          <button>立即购买</button>
+          <button class="cart-btn">加入购物车</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/cart4.jpg" alt="">
+      <div class="content">
+        <div class="row">
+          <div class="details">
+            <span>数据安全</span>
+            <p>Data security</p>
+          </div>
+          <div class="price">$288</div>
+        </div>
+        <div class="buttons">
+          <button>立即购买</button>
+          <button class="cart-btn">加入购物车</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/cart5.jpg" alt="">
+      <div class="content">
+        <div class="row">
+          <div class="details">
+            <span>机械学习</span>
+            <p>Mechanical learning</p>
+          </div>
+          <div class="price">$1588</div>
+        </div>
+        <div class="buttons">
+          <button>立即购买</button>
+          <button class="cart-btn">加入购物车</button>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/cart6.jpg" alt="">
+      <div class="content">
+        <div class="row">
+          <div class="details">
+            <span>虚拟现实</span>
+            <p>Virtual reality</p>
+          </div>
+          <div class="price">$999</div>
+        </div>
+        <div class="buttons">
+          <button>立即购买</button>
+          <button class="cart-btn">加入购物车</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
